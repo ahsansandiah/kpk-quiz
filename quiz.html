@@ -79,19 +79,41 @@
         </div>
 
         <form action="/thankyou.html" method="GET">
-            <div class="form-content-wrapper form-personal">
-                <h4>Your Profile</h4>
+            <div class="card form-personal">
+                <div class="card__header">
+                    <h4>Your Profile</h4>
+                </div>
 
-                <input class="form-input" type="text" name="firstName" placeholder="input first name">
-                <input class="form-input" type="text" name="lastName" placeholder="input last name">
-                <input class="form-input" type="email" name="email" placeholder="input email">
-                <input class="form-input" type="tel" name="phoneNumber" placeholder="input phone number">
+                <div class="card__content form-personal__content">
+                    <div class="row">
+                        <div class="form-field col-12 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input class="form-input" type="text" name="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-field col-12 col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input class="form-input" type="text" name="lastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-field col-12 col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input class="form-input" type="email" name="email" placeholder="input email" required>
+                        </div>
+                        <div class="form-field col-12 col-md-6">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input class="form-input" type="tel" name="phoneNumber" placeholder="input phone number" required>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-content-wrapper form-quiz">
-                <h4>Quiz</h4>
+            <div class="card form-quiz">
+                <div class="card__header">
+                    <h4>Quiz</h4>
+                </div>
 
-                <div class="form-quiz__item">
+                <div class="card__content form-quiz__item">
                     <p class="form-quiz__question">Question: Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Non,
                         animi. Fugiat neque
@@ -100,7 +122,7 @@
 
                     <div class="form-quiz__item-choices">
                         <div class="form-check">
-                            <input class="form-check__input" type="radio" name="answer1" id="answer1-choice1">
+                            <input class="form-check__input" type="radio" name="answer1" id="answer1-choice1" required>
                             <label class="form-check__label" for="answer1-choice1">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque magni et, hic
                                 perspiciatis iste quaerat suscipit perferendis voluptates exercitationem autem aliquid
@@ -128,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="form-quiz__item">
+                <div class="card__content form-quiz__item">
                     <p class="form-quiz__question">Question: Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Non,
                         animi. Fugiat neque
@@ -137,7 +159,7 @@
 
                     <div class="form-quiz__item-choices">
                         <div class="form-check">
-                            <input class="form-check__input" type="radio" name="answer2" id="answer2-choice1">
+                            <input class="form-check__input" type="radio" name="answer2" id="answer2-choice1" required>
                             <label class="form-check__label" for="answer2-choice1">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere atque magni et, hic
                                 perspiciatis iste quaerat suscipit perferendis voluptates exercitationem autem aliquid
@@ -165,7 +187,9 @@
                     </div>
                 </div>
 
-                <button class="btn" type="submit">Submit</button>
+                <div class="card__footer">
+                    <button class="btn btn--large mobile-block" type="submit">Submit</button>
+                </div>
             </div>
 
         </form>
